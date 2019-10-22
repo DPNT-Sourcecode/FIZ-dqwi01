@@ -32,7 +32,7 @@ public class FizBuzTest {
     @Test
     public void testFizzBuzzDeluxe() {
         FizzBuzzSolution fizbuz = new FizzBuzzSolution();
-        assertEquals("fizz buzz", fizbuz.fizzBuzz(15));
+        assertEquals("fizz buzz fake deluxe", fizbuz.fizzBuzz(15));
     }
     
     @Test
@@ -62,16 +62,17 @@ public class FizBuzTest {
     @Test
     public void testFizzNumber() {
         FizzBuzzSolution fizbuz = new FizzBuzzSolution();
-        assertEquals("buzz", fizbuz.fizzBuzz(5));
+        assertEquals("buzz fake deluxe", fizbuz.fizzBuzz(5));
     }
     
     @Test
     public void testFakeDeluxeNumber() {
         FizzBuzzSolution fizbuz = new FizzBuzzSolution();
-        assertEquals("fake deluxe", fizbuz.fizzBuzz(11));
+        assertEquals("11", fizbuz.fizzBuzz(11));
     }
 
 }
+
 
 
 

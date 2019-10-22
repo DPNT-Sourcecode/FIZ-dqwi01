@@ -19,27 +19,20 @@ public class FizzBuzzSolution {
         if((number%3 == 0 && numerator.contains("3")) || (number%5 == 0 && numerator.contains("5"))) {
             int i=0;
             String div="";
-            while(i<numerator.length()){
-                div+="1";
-                i+=1;
-            }
-            if(number%Integer.parseInt(div) == 0) {
-                if(number%2 != 0) {
-                    if(message.isEmpty()) {
-                        message = "fake deluxe";
-                    }else {
-                        message += " fake deluxe";
-                    } 
+
+            if(number%2 != 0) {
+                if(message.isEmpty()) {
+                    message = "fake deluxe";
                 }else {
-                    if(message.isEmpty()) {
-                        message ="deluxe";
-                    }else {
-                        message += " deluxe";
-                    } 
-                }
-                
+                    message += " fake deluxe";
+                } 
+            }else {
+                if(message.isEmpty()) {
+                    message ="deluxe";
+                }else {
+                    message += " deluxe";
+                } 
             }
-            
         }
         return message;
     }
@@ -63,6 +56,7 @@ public class FizzBuzzSolution {
     }
 
 }
+
 
 
 
