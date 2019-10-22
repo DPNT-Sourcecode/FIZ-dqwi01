@@ -46,5 +46,12 @@ public class FizBuzTest {
         FizzBuzzSolution fizbuz = new FizzBuzzSolution();
         assertEquals("2", fizbuz.fizzBuzz(2));
     }
+    
+    @Test
+    public void testDeluxeNumber() {
+        FizzBuzzSolution fizbuz = new FizzBuzzSolution();
+        assertEquals("deluxe", fizbuz.fizzBuzz(11));
+    }
 
 }
+
