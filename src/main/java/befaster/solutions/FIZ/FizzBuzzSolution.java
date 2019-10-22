@@ -15,7 +15,7 @@ public class FizzBuzzSolution {
                 message += " buzz";
             }
         }
-        if(number > 10) {
+        if((number%3 == 0 && numerator.contains("3")) || (number%5 == 0 && numerator.contains("5"))) {
             int i=0;
             String div="";
             while(i<numerator.length()){
@@ -48,4 +48,5 @@ public class FizzBuzzSolution {
     }
 
 }
+
 
