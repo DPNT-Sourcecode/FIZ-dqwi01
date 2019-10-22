@@ -14,6 +14,13 @@ public class FizzBuzzSolution {
                 message += " buzz";
             }
         }
+        if(number > 10) {
+            if(message.isEmpty()) {
+                message ="deluxe";
+            }else {
+                message += " deluxe";
+            } 
+        }
         if(message.isEmpty()) {
             message = number.toString();
         }
@@ -21,3 +28,4 @@ public class FizzBuzzSolution {
     }
 
 }
+
