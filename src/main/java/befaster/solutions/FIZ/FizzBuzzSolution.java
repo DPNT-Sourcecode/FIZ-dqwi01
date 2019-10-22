@@ -23,11 +23,20 @@ public class FizzBuzzSolution {
                 i+=1;
             }
             if(number%Integer.parseInt(div) == 0) {
-                if(message.isEmpty()) {
-                    message ="deluxe";
+                if(number%2 != 0) {
+                    if(message.isEmpty()) {
+                        message = "fake deluxe";
+                    }else {
+                        message += " fake deluxe";
+                    } 
                 }else {
-                    message += " deluxe";
-                } 
+                    if(message.isEmpty()) {
+                        message ="deluxe";
+                    }else {
+                        message += " deluxe";
+                    } 
+                }
+                
             }
             
         }
@@ -39,3 +48,4 @@ public class FizzBuzzSolution {
     }
 
 }
+
