@@ -59,10 +59,10 @@ public class FizBuzTest {
         assertEquals("buzz deluxe", fizbuz.fizzBuzz(55));
     }
     
-    
+    @Test
+    public void testFizzNumber() {
+        FizzBuzzSolution fizbuz = new FizzBuzzSolution();
+        assertEquals("buzz", fizbuz.fizzBuzz(5));
+    }
 
 }
-
-
-
-
