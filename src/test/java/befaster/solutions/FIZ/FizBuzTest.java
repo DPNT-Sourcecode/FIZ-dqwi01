@@ -14,7 +14,7 @@ public class FizBuzTest {
     @Test
     public void testFizzStringThree() {
         FizzBuzzSolution fizbuz = new FizzBuzzSolution();
-        assertEquals("fizz deluxe", fizbuz.fizzBuzz(32));
+        assertEquals("fizz", fizbuz.fizzBuzz(32));
     }
 
     @Test
@@ -50,22 +50,19 @@ public class FizBuzTest {
     @Test
     public void testFizDeluxeNumber() {
         FizzBuzzSolution fizbuz = new FizzBuzzSolution();
-        assertEquals("fizz", fizbuz.fizzBuzz(12));
+        assertEquals("fizz deluxe", fizbuz.fizzBuzz(33));
     }
     
     @Test
     public void testBuzzDeluxeNumber() {
         FizzBuzzSolution fizbuz = new FizzBuzzSolution();
-        assertEquals("buzz", fizbuz.fizzBuzz(20));
+        assertEquals("buzz deluxe", fizbuz.fizzBuzz(55));
     }
     
-    @Test
-    public void testDeluxeNumberSameDigits() {
-        FizzBuzzSolution fizbuz = new FizzBuzzSolution();
-        assertEquals("deluxe", fizbuz.fizzBuzz(11));
-    }
+    
 
 }
+
 
 
 

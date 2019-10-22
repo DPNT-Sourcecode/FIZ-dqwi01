@@ -4,10 +4,11 @@ public class FizzBuzzSolution {
 
     public String fizzBuzz(Integer number) {
         String message="";
-        if (number%3 == 0 || number.toString().contains("3")) {
+        String numerator = number.toString();
+        if (number%3 == 0 || numerator.contains("3")) {
             message ="fizz";
         }
-        if(number%5 == 0 || number.toString().contains("5")) {
+        if(number%5 == 0 || numerator.contains("5")) {
             if(message.isEmpty()) {
                 message ="buzz";
             }else {
@@ -15,19 +16,29 @@ public class FizzBuzzSolution {
             }
         }
         if(number > 10) {
-            if(message.isEmpty()) {
-                message ="deluxe";
-            }else {
-                message += " deluxe";
-            } 
+            int i=0;
+            String div="";
+            while(i<numerator.length()){
+                div+="1";
+                i+=1;
+            }
+            if(number%Integer.parseInt(div) == 0) {
+                if(message.isEmpty()) {
+                    message ="deluxe";
+                }else {
+                    message += " deluxe";
+                } 
+            }
+            
         }
-        
+
         if(message.isEmpty()) {
-            message = number.toString();
+            message = numerator;
         }
         return message;
     }
 
 }
+
 
 
