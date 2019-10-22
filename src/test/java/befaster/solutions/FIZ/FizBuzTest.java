@@ -10,6 +10,12 @@ public class FizBuzTest {
         FizzBuzzSolution fizbuz = new FizzBuzzSolution();
         assertEquals("fizz", fizbuz.fizzBuzz(9));
     }
+    
+    @Test
+    public void testFizzStringThree() {
+        FizzBuzzSolution fizbuz = new FizzBuzzSolution();
+        assertEquals("fizz", fizbuz.fizzBuzz(32));
+    }
 
     @Test
     public void testBuzz() {
@@ -18,11 +24,30 @@ public class FizBuzTest {
     }
     
     @Test
+    public void testFizzStringFive() {
+        FizzBuzzSolution fizbuz = new FizzBuzzSolution();
+        assertEquals("buzz", fizbuz.fizzBuzz(52));
+    }
+    
+    @Test
     public void testFizzBuzz() {
         FizzBuzzSolution fizbuz = new FizzBuzzSolution();
         assertEquals("fizz buzz", fizbuz.fizzBuzz(15));
     }
+    
+    @Test
+    public void testFizzBuzzStringCombined() {
+        FizzBuzzSolution fizbuz = new FizzBuzzSolution();
+        assertEquals("fizz buzz", fizbuz.fizzBuzz(35));
+    }
+    
+    @Test
+    public void testFizzBuzzNumber() {
+        FizzBuzzSolution fizbuz = new FizzBuzzSolution();
+        assertEquals("2", fizbuz.fizzBuzz(2));
+    }
 
 }
+
 
 
