@@ -44,7 +44,7 @@ public class FizBuzTest {
     @Test
     public void testDeluxeNumber() {
         FizzBuzzSolution fizbuz = new FizzBuzzSolution();
-        assertEquals("deluxe", fizbuz.fizzBuzz(12));
+        assertEquals("deluxe", fizbuz.fizzBuzz(22));
     }
     
     @Test
@@ -72,4 +72,5 @@ public class FizBuzTest {
     }
 
 }
+
 
