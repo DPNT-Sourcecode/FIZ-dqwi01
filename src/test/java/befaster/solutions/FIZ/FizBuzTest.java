@@ -26,7 +26,7 @@ public class FizBuzTest {
     @Test
     public void testFizzStringFive() {
         FizzBuzzSolution fizbuz = new FizzBuzzSolution();
-        assertEquals("buzz", fizbuz.fizzBuzz(5));
+        assertEquals("buzz fake deluxe", fizbuz.fizzBuzz(5));
     }
     
     @Test
@@ -70,9 +70,12 @@ public class FizBuzTest {
         FizzBuzzSolution fizbuz = new FizzBuzzSolution();
         assertEquals("11", fizbuz.fizzBuzz(11));
     }
+    
+    
+    @Test
+    public void testDeluxeMatchNumber() {
+        FizzBuzzSolution fizbuz = new FizzBuzzSolution();
+        assertEquals("fizz deluxe", fizbuz.fizzBuzz(36));
+    }
 
 }
-
-
-
-
