@@ -21,6 +21,7 @@ public class FizzBuzzSolution {
                 message += " deluxe";
             } 
         }
+        
         if(message.isEmpty()) {
             message = number.toString();
         }
@@ -28,4 +29,5 @@ public class FizzBuzzSolution {
     }
 
 }
+
 
